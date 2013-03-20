@@ -33,7 +33,9 @@ Source:
 
 Dependencies
 ------------
-require.js | http://www.requirejs.org or
+Script | Url
+--- | ---
+require.js | http://www.requirejs.org
 
 Authors
 -------
