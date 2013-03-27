@@ -1,7 +1,7 @@
 jquery.require
 ==============
 **file:** jquery.require.js
-**version:** 0.1.0
+**version:** 0.1.1
 
 jQuery plugin for use with requirejs
 ------------------------------------
