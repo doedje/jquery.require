@@ -1,7 +1,7 @@
 {
 	"name": "require",
 	"title": "jQuery Require",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "jQuery plugin for use with requirejs. Allows you to do $(selector).require([plugin], function() { $(this).plugin; }); With the advantage that it only loads the dependencies when at least one element is selected. Let's $(selector).require()!",
 	"keywords": [
 		"require",

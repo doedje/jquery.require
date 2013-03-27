@@ -17,13 +17,16 @@ With the advantage that it will first check the length of $(selector) and only c
 Source:
 -------
 	require(['jquery',
-				'require'],
+			'require'],
 	function($,
-				require) {
+			req) {
+			// require is given back in the req variable,
+			// this way the optimizer won't include it in a build and
+			// the dependencies are loaded only when needed...
 		$.fn.require = function(dependencies, callback) {
 			var el = this;
 			if (this.length > 0) {
-				require(dependencies, function() {
+				req(dependencies, function() {
 					callback.apply(el, arguments);
 				});
 			}
@@ -47,4 +50,5 @@ Changelog
 ---------
 Version | Changes
 --- | ---
+0.1.1 | changed the variable giving back require the new name 'req'
 0.1.0 | first version of **$.require**
